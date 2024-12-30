@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cofig-server
+  profile:
+    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MotteyAmos/application.config/
+          skipSslValidation: true
+
+server:
+  port: 8888
